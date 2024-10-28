@@ -27,6 +27,7 @@ import {
   AlertDescription,
 } from "./components/ui/alertComponent";
 import Input from "./components/ui/inputComponent";
+import VideoProcessing from "./components/process"
 
 const AuthContext = createContext(null);
 
@@ -374,6 +375,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/process" element={<VideoProcessing />} />
           <Route
             path="/dashboard"
             element={
@@ -387,7 +389,7 @@ function App() {
             element={
               <Layout>
                 {" "}
-                <Detector />
+                <VideoProcessing />
               </Layout>
             }
           />
